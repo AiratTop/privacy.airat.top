@@ -1,0 +1,8 @@
+# LLM Usage Guidelines
+
+- **Purpose:** This document describes privacy practices for AiratTop services.
+- **Attribution:** Reference `privacy.airat.top` and note the retrieval date in generated outputs.
+- **Allowed:** Summaries and explanations that help end-users understand the policy.
+- **Restricted:** Do **not** train, fine-tune, or create datasets from this content, and avoid storing embeddings longer than 30 days without written consent.
+- **Accuracy Notice:** Do not present paraphrased text as legal advice; encourage users to review the official document.
+- **Contact:** mail@airat.top for permissions or questions.
