@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -16,242 +16,168 @@
     <meta name="google-site-verification" content="zuHpP1sB8u4uv7gVtMj2RNaGCoxq2lGMYENOCMovy1Y" />
     <meta name="yandex-verification" content="6d08a6d5c02c329e" />
     <link rel="canonical" href="https://privacy.airat.top/" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" href="/favicon.ico">
-    <link rel="manifest" href="/site.webmanifest">
-    <style>
-      :root {
-        color-scheme: light dark;
-        --bg: #0f172a;
-        --panel: rgba(15, 23, 42, 0.92);
-        --text: #f8fafc;
-        --muted: #cbd5f5;
-        --accent: #38bdf8;
-        font-size: 16px;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      }
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: clamp(1.5rem, 3vw + 1rem, 4rem) 1.5rem;
-        background: linear-gradient(160deg, #020617 0%, #1e293b 55%, #020617 100%);
-        color: var(--text);
-      }
-
-      main {
-        width: min(840px, 100%);
-        background: var(--panel);
-        border-radius: 24px;
-        padding: clamp(2rem, 2vw + 1.5rem, 3.25rem);
-        box-shadow: 0 25px 60px rgba(8, 47, 73, 0.45);
-        backdrop-filter: blur(12px);
-      }
-
-      header h1 {
-        margin: 0;
-        font-size: clamp(2rem, 2.6vw + 1rem, 2.6rem);
-        letter-spacing: 0.03em;
-      }
-
-      header p {
-        margin-top: 0.75rem;
-        color: var(--muted);
-        line-height: 1.6;
-      }
-
-      section {
-        margin-top: 2rem;
-      }
-
-      section:first-of-type {
-        margin-top: 2.5rem;
-      }
-
-      h2 {
-        margin: 0 0 0.85rem;
-        font-size: clamp(1.15rem, 1.3vw + 1rem, 1.5rem);
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: var(--accent);
-      }
-
-      p,
-      li {
-        margin: 0 0 1rem;
-        line-height: 1.7;
-      }
-
-      ul {
-        padding-left: 1.1rem;
-        margin: 0 0 1.5rem;
-      }
-
-      a {
-        color: var(--accent);
-        text-decoration: none;
-        font-weight: 600;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
-      footer {
-        margin-top: 2.5rem;
-        font-size: 0.95rem;
-        color: rgba(203, 213, 225, 0.75);
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        * {
-          transition-duration: 0.01ms !important;
-          scroll-behavior: auto !important;
-          animation-duration: 0.01ms !important;
-        }
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main>
-      <header>
-        <h1>Privacy Policy</h1>
-        <p>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <main class="shell">
+      <header class="brand">
+        <div class="brand-copy">
+          <p class="brand-eyebrow">privacy.airat.top</p>
+          <h1>Privacy Policy</h1>
+          <p class="brand-subtitle">
+            How AiratTop collects, uses, and protects information across airat.top services.
+          </p>
+        </div>
+        <div class="brand-actions">
+          <a class="repo-link" href="https://airat.top" target="_blank" rel="noreferrer">airat.top</a>
+          <a class="repo-link" href="https://terms.airat.top" target="_blank" rel="noreferrer terms-of-service">Terms</a>
+          <a class="repo-link" href="https://donate.airat.top" target="_blank" rel="noreferrer">Donate</a>
+        </div>
+      </header>
+
+      <article class="content">
+        <p class="lead">
           This Privacy Policy explains how AiratTop (“we”, “our”, “us”) collects, uses, and safeguards information when you use
           any website or service under the <strong>airat.top</strong> domain, including but not limited to
           <code>about.airat.top</code>, <code>blog.airat.top</code>, <code>donate.airat.top</code>, <code>privacy.airat.top</code>, and other self-hosted project subdomains (collectively, the “Services”).
         </p>
-        <p>Last updated: <time datetime="2024-07-09">9 July 2024</time></p>
-      </header>
+        <p class="meta">Last updated: <time datetime="2024-07-09">9 July 2024</time></p>
 
-      <section>
-        <h2>1. Scope</h2>
-        <p>
-          This policy applies to all visitors and users of the Services. By accessing or using any Service, you agree that your
-          information will be handled as described here and in our <a href="https://terms.airat.top" target="_blank" rel="terms-of-service">Terms of Use</a>.
-          If you do not agree, please discontinue use of the Services.
-        </p>
-      </section>
+        <section>
+          <h2>1. Scope</h2>
+          <p>
+            This policy applies to all visitors and users of the Services. By accessing or using any Service, you agree that your
+            information will be handled as described here and in our <a href="https://terms.airat.top" target="_blank" rel="noreferrer terms-of-service">Terms of Use</a>.
+            If you do not agree, please discontinue use of the Services.
+          </p>
+        </section>
 
-      <section>
-        <h2>2. Information We Collect</h2>
-        <p>We collect the following types of information:</p>
-        <ul>
-          <li>
-            <strong>Technical data:</strong> IP address, browser user agent, device type, operating system, and referring URL, captured in standard server logs for security and troubleshooting.
-          </li>
-          <li>
-            <strong>Usage analytics:</strong> Aggregated metrics such as page views, session duration, and geography collected via Google Analytics.
-          </li>
-          <li>
-            <strong>Voluntary communications:</strong> Information you provide when contacting us (for example, email address and message content).
-          </li>
-          <li>
-            <strong>Donation transparency:</strong> Cryptocurrency wallet addresses are published for voluntary contributions; we do not collect sender details beyond what is publicly available on the corresponding blockchain.
-          </li>
-        </ul>
-      </section>
+        <section>
+          <h2>2. Information We Collect</h2>
+          <p>We collect the following types of information:</p>
+          <ul>
+            <li>
+              <strong>Technical data:</strong> IP address, browser user agent, device type, operating system, and referring URL, captured in standard server logs for security and troubleshooting.
+            </li>
+            <li>
+              <strong>Usage analytics:</strong> Aggregated metrics such as page views, session duration, and geography collected via Google Analytics.
+            </li>
+            <li>
+              <strong>Voluntary communications:</strong> Information you provide when contacting us (for example, email address and message content).
+            </li>
+            <li>
+              <strong>Donation transparency:</strong> Cryptocurrency wallet addresses are published for voluntary contributions; we do not collect sender details beyond what is publicly available on the corresponding blockchain.
+            </li>
+          </ul>
+        </section>
 
-      <section>
-        <h2>3. Cookies and Similar Technologies</h2>
-        <p>
-          The Services may use first-party cookies and browser storage to remember preferences (such as language or theme). Google Analytics sets cookies to gather usage statistics. You can prevent cookies by adjusting your browser settings, though this may affect certain functionality.
-        </p>
-      </section>
+        <section>
+          <h2>3. Cookies and Similar Technologies</h2>
+          <p>
+            The Services may use first-party cookies and browser storage to remember preferences (such as language or theme). Google Analytics sets cookies to gather usage statistics. You can prevent cookies by adjusting your browser settings, though this may affect certain functionality.
+          </p>
+        </section>
 
-      <section>
-        <h2>4. Use of Google Analytics</h2>
-        <p>
-          We use Google Analytics to understand how visitors interact with the Services. Google Analytics processes data as described in
-          Google’s <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Privacy Policy</a> and
-          <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noreferrer">Opt-out Browser Add-on</a>. We do not enable Advertising Features or share analytics data with other Google services for marketing purposes.
-        </p>
-        <p>
-          IP anonymization is enabled where supported. Analytics data is aggregated and not used to identify individual users.
-        </p>
-      </section>
+        <section>
+          <h2>4. Use of Google Analytics</h2>
+          <p>
+            We use Google Analytics to understand how visitors interact with the Services. Google Analytics processes data as described in
+            Google’s <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Privacy Policy</a> and
+            <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noreferrer">Opt-out Browser Add-on</a>. We do not enable Advertising Features or share analytics data with other Google services for marketing purposes.
+          </p>
+          <p>
+            IP anonymization is enabled where supported. Analytics data is aggregated and not used to identify individual users.
+          </p>
+        </section>
 
-      <section>
-        <h2>5. How We Use Information</h2>
-        <ul>
-          <li>Maintain and improve the Services, including performance and stability monitoring.</li>
-          <li>Analyse aggregate usage trends to inform future product decisions.</li>
-          <li>Respond to support or partnership inquiries you submit.</li>
-          <li>Protect against malicious or unauthorized activity.</li>
-        </ul>
-      </section>
+        <section>
+          <h2>5. How We Use Information</h2>
+          <ul>
+            <li>Maintain and improve the Services, including performance and stability monitoring.</li>
+            <li>Analyse aggregate usage trends to inform future product decisions.</li>
+            <li>Respond to support or partnership inquiries you submit.</li>
+            <li>Protect against malicious or unauthorized activity.</li>
+          </ul>
+        </section>
 
-      <section>
-        <h2>6. Sharing and Disclosure</h2>
-        <p>
-          We do not sell, rent, or trade personal data. Information may be shared only:
-        </p>
-        <ul>
-          <li>With service providers necessary to operate the Services (e.g., hosting, analytics), all bound by contractual obligations.</li>
-          <li>When required by law, regulation, or legal process.</li>
-          <li>To protect the rights, property, or safety of AiratTop, our users, or the public.</li>
-        </ul>
-      </section>
+        <section>
+          <h2>6. Sharing and Disclosure</h2>
+          <p>
+            We do not sell, rent, or trade personal data. Information may be shared only:
+          </p>
+          <ul>
+            <li>With service providers necessary to operate the Services (e.g., hosting, analytics), all bound by contractual obligations.</li>
+            <li>When required by law, regulation, or legal process.</li>
+            <li>To protect the rights, property, or safety of AiratTop, our users, or the public.</li>
+          </ul>
+        </section>
 
-      <section>
-        <h2>7. Data Retention</h2>
-        <p>
-          Server logs are typically retained for up to 90 days unless longer storage is needed for security investigations.
-          Analytics data is stored in Google Analytics according to its retention schedule (currently 14 months for user-level data).
-          Communication records are kept for as long as necessary to respond and maintain a clear history.
-        </p>
-      </section>
+        <section>
+          <h2>7. Data Retention</h2>
+          <p>
+            Server logs are typically retained for up to 90 days unless longer storage is needed for security investigations.
+            Analytics data is stored in Google Analytics according to its retention schedule (currently 14 months for user-level data).
+            Communication records are kept for as long as necessary to respond and maintain a clear history.
+          </p>
+        </section>
 
-      <section>
-        <h2>8. International Visitors</h2>
-        <p>
-          The Services are operated from the European Union. By using the Services, you understand that information may be processed in the EU or other jurisdictions where our service providers operate, which may have data protection laws different from those in your country.
-        </p>
-      </section>
+        <section>
+          <h2>8. International Visitors</h2>
+          <p>
+            The Services are operated from the European Union. By using the Services, you understand that information may be processed in the EU or other jurisdictions where our service providers operate, which may have data protection laws different from those in your country.
+          </p>
+        </section>
 
-      <section>
-        <h2>9. Your Rights and Choices</h2>
-        <p>
-          Depending on your location, you may have rights to access, correct, delete, or restrict the processing of your personal data.
-          To exercise these rights, contact us using the details below. We will respond within a reasonable timeframe and in accordance with applicable laws.
-        </p>
-      </section>
+        <section>
+          <h2>9. Your Rights and Choices</h2>
+          <p>
+            Depending on your location, you may have rights to access, correct, delete, or restrict the processing of your personal data.
+            To exercise these rights, contact us using the details below. We will respond within a reasonable timeframe and in accordance with applicable laws.
+          </p>
+        </section>
 
-      <section>
-        <h2>10. Children’s Privacy</h2>
-        <p>
-          The Services are not directed to children under 16. We do not knowingly collect personal information from children. If you believe a child has provided us with information, please contact us so we can delete it.
-        </p>
-      </section>
+        <section>
+          <h2>10. Children’s Privacy</h2>
+          <p>
+            The Services are not directed to children under 16. We do not knowingly collect personal information from children. If you believe a child has provided us with information, please contact us so we can delete it.
+          </p>
+        </section>
 
-      <section>
-        <h2>11. Changes to This Policy</h2>
-        <p>
-          We may update this Privacy Policy from time to time. Material changes will be posted on this page with a revised “Last updated” date. Continued use of the Services after changes becomes effective constitutes acceptance of the updated policy.
-        </p>
-      </section>
+        <section>
+          <h2>11. Changes to This Policy</h2>
+          <p>
+            We may update this Privacy Policy from time to time. Material changes will be posted on this page with a revised “Last updated” date. Continued use of the Services after changes becomes effective constitutes acceptance of the updated policy.
+          </p>
+        </section>
 
-      <section>
-        <h2>12. Contact</h2>
-        <p>
-          If you have questions or requests regarding this Privacy Policy, please email
-          <a href="mailto:mail@airat.top">mail@airat.top</a>.
-        </p>
-      </section>
+        <section>
+          <h2>12. Contact</h2>
+          <p>
+            If you have questions or requests regarding this Privacy Policy, please email
+            <a href="mailto:mail@airat.top">mail@airat.top</a>.
+          </p>
+        </section>
+      </article>
 
-      <footer>
+      <footer class="doc-footer">
         <p>AiratTop · airat.top</p>
       </footer>
     </main>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVEGGNPJXK"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
