@@ -5,7 +5,8 @@ Public Privacy Policy page for AiratTop services (`privacy.airat.top`).
 
 ## Repository Role
 - Category: `*.airat.top` (public static page).
-- Deployment platform: Cloudflare Pages.
+- Deployment platform: Cloudflare Workers (static assets).
+- Deployment configuration: `wrangler.jsonc`.
 - Main content directory: `public_html`.
 
 ## Content and Structure
