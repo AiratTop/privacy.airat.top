@@ -15,7 +15,7 @@ Public Privacy Policy page for AiratTop services (`privacy.airat.top`).
 ## Site Conventions
 - Keep legal wording clear and versionable.
 - Keep SEO metadata: `title`, `description`, canonical, Open Graph, Twitter tags.
-- Keep required counters/verification tags (Google Analytics + Yandex verification).
+- Keep the Google Analytics counter and required site-verification meta tags. Verification tags only prove domain ownership; they are not analytics counters and do not track visitors.
 - Publish static assets from `public_html`.
 
 ## AI Working Notes
